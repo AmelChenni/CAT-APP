@@ -67,31 +67,39 @@ img {
 }
 
 input {
-  color: #432000;
-  background-color: #DCE1EB;
-  border: 0;
+  color: #333;
+  background-color: #E8EEF7;
+  border: 2px solid #B0C4DE;
   padding: 15px;
   border-radius: 8px;
   font-size: 20px;
   text-align: center;
   font-family: 'Rubik', sans-serif;
   margin: 10px 0;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+input:focus {
+  background-color: #FFF;
+  border-color: #6495ED;
 }
 
 button {
-  color: #FDFDFD;
-  background-color: #AC485A;
+  color: #FFF;
+  background-color: #6495ED;
   border: 0;
   padding: 15px;
   border-radius: 8px;
   font-size: 20px;
   text-align: center;
   font-family: 'Rubik', sans-serif;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
-  background-color: #432000;
+  background-color: #4169E1;
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 ul {
@@ -104,15 +112,17 @@ ul {
 
 ul li {
   font-size: 20px;
-  background-color: #FFFDF8;
+  background-color: #FFF;
   padding: 15px;
   border-radius: 8px;
   flex-grow: 1;
   text-align: center;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 ul li:hover {
-  background-color: #FFECC7;
+  background-color: #F0F8FF;
   cursor: pointer;
+  transform: scale(1.05);
 }
